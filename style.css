@@ -1,8 +1,32 @@
-body {
-    background: black
+html, * {
+    margin: 0;
+    padding: 0;
 }
 
-h1 { 
-    color: white
+body {
+    background: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    max-width: 890px;
+    margin: 0 auto;
+}
+
+.question-section {
+    box-shadow: 4px 8px 18px #ccc;
+    margin-bottom: 20px;
+}
+
+.question-section header {
+    padding: 18px 20px;
+    background-color: #4a4a4a;
+    color: #ffffff
+}
+
+.question-section header h2 {
+    font-size: 0.875rem;
+}
+
+.question-section form {
+    padding: 18px 20px; 
 
 }

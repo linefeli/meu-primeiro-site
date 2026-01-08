@@ -2,7 +2,11 @@
 <html>
     <head>
         <title>Quiz para Dorameiras</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
         <meta name="description" content="Um quiz interativo para testar os seus conhecimentos">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -18,8 +22,10 @@
 
             </section>
             <!--Pergunta 1: Multipla escolha-->
-            <section>
-                <h2>Pergunta 1: Qual o nome do Dorama em que a prota cai de paraquedas em um País estrangeiro?</h2>
+            <section class="question-section">
+                <header>
+                    <h2>Pergunta 1: Qual o nome do Dorama em que a prota cai de paraquedas em um País estrangeiro?</h2>
+                </header>
                 <form>
                     <div>
                         <input type="radio" value="Intensivão do Amor" id="p1a" name="pergunta1">
@@ -37,33 +43,41 @@
                         <input type="radio" value="Pretendente surpresa" id="p1d" name="pergunta1">
                         <label for="p1d">Pretendente surpresa</label>
                     </div>
-
+                    <button>Avançar</button>
                 </form>
             </section>
             <!--Pergunta 2: texto-->
-            <section>
-                <h2>Pergunta 2: No dorama Goblin, a prota consegue ver algo no corpo do Goblin que nenhuma outra pessoa consegue. Este objeto está atravessado no corpo dele e é____</h2>
+            <section class="question-section">
+                <header>
+                    <h2>Pergunta 2: No dorama Goblin, a prota consegue ver algo no corpo do Goblin que nenhuma outra pessoa consegue. Este objeto está atravessado no corpo dele e é____</h2>
+                </header>
                 <form>
                     <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
                 </form>
             </section>
             <!--Pergunta 3: Senha-->
-            <section>
-                <h2>Pergunta 3: Escreva o nome de um Dorama que te fez surtar</h2>
+            <section class="question-section">
+                <header>
+                    <h2>Pergunta 3: Escreva o nome de um Dorama que te fez surtar</h2>
+                </header>
                 <form>
                     <input type="password" id="p3" name="pergunta3" placeholder="Digite um nome...">
                 </form>
             </section>
             <!--Pergunta 4: Data-->
-            <section>
-                <h2>Pergunta 4: Em que ano foi lançado o dorama "Quando o telefone toca"? </h2>
+            <section class="question-section">
+                <header>
+                    <h2>Pergunta 4: Em que ano foi lançado o dorama "Quando o telefone toca"? </h2>
+                </header>
                 <form>
                     <input type="date" id="p4" name="pergunta4">
                 </form>
             </section>
             <!--Pergunta 5: Seleção múltipla-->
-            <section>
-                <h2>Pergunta 5: Qual desses Doramas são considerados K-Dramas?</h2>
+            <section class="question-section">
+                <header>
+                    <h2>Pergunta 5: Qual desses Doramas são considerados K-Dramas?</h2>
+                </header>
                 <form>
                     <div>
                         <input type="checkbox" id="p5a" name="pergunta5" value="Jardim de meteoros">
@@ -89,15 +103,19 @@
                 </form>
             </section>
             <!--Pergunta 6:-->
-            <section>
-                <h2>Pergunta 6: Faça upload de um arquivo contento fotos de um oppa</h2>
+            <section class="question-section">
+                <header>
+                    <h2>Pergunta 6: Faça upload de um arquivo contento fotos de um oppa</h2>
+                </header>
                 <form>
                     <input type="file" id="pg" name="pergunta6">
                 </form>
             </section>
             <!--Pergunta 7: Menu suspenso-->
-            <section>
-                <h2>Pergunta 7: Selecione qual Oppa é o seu top 1</h2>
+            <section class="question-section">
+                <header>
+                    <h2>Pergunta 7: Selecione qual Oppa é o seu top 1</h2>
+                </header>
                 <form>
                     <select name="pergunta7" id="p7">
                         <option value="Cha Eun Woo">Cha Eun Woo</option>
@@ -109,8 +127,10 @@
                 </form>
             </section>
             <!--Pergunta 8: Imagens-->
-            <section>
-                <h2>Qual o nome do Dorama representado pela imagem abaixo?</h2>
+            <section class="question-section">
+                <header>
+                    <h2>Qual o nome do Dorama representado pela imagem abaixo?</h2>
+                </header>
                 <figure>
                     <img src="dorama.jpg" alt="Imagem cena de um dorama" style="width:100%; max-width:300px;">
                     <figcaption>Figura 1: Cena de um dorama</figcaption>
