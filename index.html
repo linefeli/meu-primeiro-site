@@ -9,13 +9,16 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <h1>Quiz interativo para Dorameiras</h1>
-            <p>Teste seus conhecimentos em Doramas e veja qual pontuação voce consegue fazer!</p>
+        <header class="main-header">
+            <div class="container">
+                <h1>Quiz interativo para Dorameiras</h1>
+                <p>Teste seus conhecimentos em Doramas e veja qual pontuação voce consegue fazer!</p>
+            </div>
         </header>
         <main>
+            <div class="container">
             <!--Introdução-->
-            <section>
+            <section class="introduction">
                 <h2>Sobre esse Quiz</h2>
                 <p> <strong>Este Quiz</strong> foi desenvolvido para testar seus conhecimentos em <abbr title="Novelas asiáticas">Doramas</abbr>!</p>
                 <p>Voce encontrará diferentes tipos de perguntas, incluindo multipla escolha, texto e perguntas de data. Desafie-se com este Quiz!</p>
@@ -43,7 +46,9 @@
                         <input type="radio" value="Pretendente surpresa" id="p1d" name="pergunta1">
                         <label for="p1d">Pretendente surpresa</label>
                     </div>
-                    <button>Avançar</button>
+                    <div class="form-actions">
+                        <button>Avançar</button>
+                    </div>
                 </form>
             </section>
             <!--Pergunta 2: texto-->
@@ -209,10 +214,14 @@
                     </fieldset>
                 </form>
             </section>
+        </div>
         </main>
+        <div>
         <footer>
-            <p>&copy Quiz de Doramas. Todos os direitos reservados.</p>
-            <p>Para conhecer outros Quizzes <a href="https://google.com" target="_blank">clique aqui</a></p>
+            <div class="container">
+                <p>&copy Quiz de Doramas. Todos os direitos reservados.</p>
+                <p>Para conhecer outros Quizzes <a href="https://google.com" target="_blank">clique aqui</a></p>
+            </div>
         </footer>
     </body>
 </html>

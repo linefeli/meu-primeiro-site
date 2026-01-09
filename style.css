@@ -4,22 +4,32 @@ html, * {
 }
 
 body {
-    background: white;
     font-family: "Inter", sans-serif;
     font-weight: 400;
+    background-color: #f2e3ed;
+}
+
+.container {
     max-width: 890px;
-    margin: 0 auto;
+    margin: 0 auto;  
+}
+
+.introduction {
+    margin: 20px 0;
 }
 
 .question-section {
     box-shadow: 4px 8px 18px #ccc;
     margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: white;
 }
 
 .question-section header {
     padding: 18px 20px;
-    background-color: #4a4a4a;
-    color: #ffffff
+    background-color: #904176;
+    color: #ffffff;
+    border-radius: 25px 25px 0 0;
 }
 
 .question-section header h2 {
@@ -28,5 +38,32 @@ body {
 
 .question-section form {
     padding: 18px 20px; 
+}
 
+.question-section .form-actions {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+}
+
+.question-section .form-actions button {
+    padding: 6px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #904176;
+    color: white;
+}
+
+.main-header {
+    width: 100%;
+    background-color: #904176;
+    padding: 20px 0;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.875rem;
+    color: #666;
 }
