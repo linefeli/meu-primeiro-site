@@ -1,6 +1,7 @@
 html, * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,6 +17,8 @@ body {
 
 .introduction {
     margin: 20px 0;
+    color: #904176;
+    text-align: center;
 }
 
 .question-section {
@@ -23,6 +26,22 @@ body {
     margin-bottom: 20px;
     border-radius: 25px;
     background-color: white;
+    width: 100%;
+    position: relative;
+}
+
+.question-section figure {
+    padding: 18px 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    color: #696969;
+}
+
+.question-section figure img {
+    border-radius: 10%;
 }
 
 .question-section header {
@@ -37,7 +56,32 @@ body {
 }
 
 .question-section form {
-    padding: 18px 20px; 
+    padding: 18px 20px;
+    margin-top: 10px;
+    width: 100% 
+}
+
+.question-section label {
+    color: #696969
+}
+
+.question-section label:hover {
+    color: #904176;
+}
+
+.question-section label svg {
+    color: #696969;
+    
+}
+
+.question-section input[type="text"],
+.question-section select  {
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #904176;
+
 }
 
 .question-section .form-actions {
@@ -59,6 +103,7 @@ body {
     background-color: #904176;
     padding: 20px 0;
     color: white;
+    text-align: center;
 }
 
 footer {
@@ -67,3 +112,53 @@ footer {
     font-size: 0.875rem;
     color: #666;
 }
+
+.feedback-section {
+    background-color: #904176;
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+}
+
+.feedback-section table {
+    margin-top: 10px; 
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.feedback-section table th:first-child {
+    border-top-left-radius: 20px;
+}
+
+.feedback-section table th:last-child {
+    border-top-right-radius: 20px;
+}
+
+.feedback-section table tfoot td {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.feedback-section table th {
+    background-color: #f2e3ed;
+    padding: 10px;
+    color: #904176;
+}
+
+.feedback-section table td {
+    background-color: #f2e3ed;
+    padding: 10px;
+    color: #904176;
+    border-top: 1px solid #904176;
+}
+
+tfoot [colspan="2"], h2 {
+    text-align: center;
+    margin: 
+}
+
+li {
+    color: #696969;
+}
+
