@@ -8,8 +8,26 @@ body {
     font-family: "Inter", sans-serif;
     font-weight: 400;
     background-color: #f2e3ed;
+
+    /*background-image: url('dorama2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;*/
 }
 
+/*#body-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 0;
+}*/
+
+.content {
+    position: relative;
+    z-index: 50;
+}
 .container {
     max-width: 890px;
     margin: 0 auto;  
@@ -84,13 +102,13 @@ body {
 
 }
 
-.question-section .form-actions {
+.form-actions {
     display: flex;
     justify-content: end;
     margin-top: 20px;
 }
 
-.question-section .form-actions button {
+.form-actions button {
     padding: 6px 20px;
     border: none;
     border-radius: 10px;
@@ -108,7 +126,7 @@ body {
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 40px 0;
     font-size: 0.875rem;
     color: #666;
 }
@@ -155,10 +173,64 @@ footer {
 
 tfoot [colspan="2"], h2 {
     text-align: center;
-    margin: 
 }
 
 li {
     color: #696969;
 }
 
+.respostas h2 {
+    margin: 20px;
+    color: #904176;
+}
+
+.respostas li:hover {
+    color: #904176
+}
+
+.feedback h2 {
+    margin: 20px;
+    color: #904176;
+}
+
+.feedback fieldset {
+    border-radius: 20px;
+    padding: 10px;
+    border-color: #904176;
+}
+
+.feedback fieldset div {
+    margin-bottom: 10px;
+}
+
+.feedback legend {
+    color: #904176;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.feedback fieldset input, 
+.feedback fieldset textarea {
+    color: #904176;
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #904176;
+}
+
+
+.feedback label {
+    color: #904176;
+}
+
+.respostas summary {
+    color: #904176;
+    text-align: center;
+}
+
+.onclick {
+    background-color: #f2e3ed;
+    color: #904176;
+}

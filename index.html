@@ -9,246 +9,251 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="main-header">
-            <div class="container">
-                <h1>Quiz interativo para Dorameiras</h1>
-                <p>Teste seus conhecimentos em Doramas e veja qual pontuação voce consegue fazer!</p>
+        <div id="body-overlay"></div>
+        <div class="content">
+            <header class="main-header">
+                <div class="container">
+                    <h1>Quiz interativo para Dorameiras</h1>
+                    <p>Teste seus conhecimentos em Doramas e veja qual pontuação voce consegue fazer!</p>
+                </div>
+            </header>
+            <main>
+                <div class="container">
+                <!--Introdução-->
+                <section class="introduction">
+                    <h2>Sobre esse Quiz</h2>
+                    <p> <strong>Este Quiz</strong> foi desenvolvido para testar seus conhecimentos em <abbr title="Novelas asiáticas">Doramas</abbr>!</p>
+                    <p>Voce encontrará diferentes tipos de perguntas, incluindo multipla escolha, texto e perguntas de data. Desafie-se com este Quiz!</p>
+    
+                </section>
+                <!--Pergunta 1: Multipla escolha-->
+                <section class="question-section">
+                    <header>
+                        <h2>Pergunta 1: Qual o nome do Dorama em que a prota cai de paraquedas em um País estrangeiro?</h2>
+                    </header>
+                    <form>
+                        <div style="display: flex; align-itens: center; gap: 8px">
+                            <label for="p1a">
+                                <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
+                            </label>
+                            <input type="radio" value="Intensivão do Amor" id="p1a" name="pergunta1" style="display: none">
+                            <label for="p1a">Intensivão do amor</label>
+                        </div>
+                        <div style="display: flex; align-itens: center; gap: 8px">
+                            <label for="p1b">
+                                <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
+                            </label>
+                            <input type="radio" value="Amor e batatas" id="p1b" name="pergunta1" style="display: none">
+                            <label for="p1b">Amor e batatas</label>
+                        </div>
+                        <div style="display: flex; align-itens: center; gap: 8px">
+                            <label for="p1c">
+                                <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
+                            </label>
+                            <input type="radio" value="Pusando no amor" id="p1c" name="pergunta1" style="display: none">
+                            <label for="p1c">Pousando no amor</label>
+                        </div>
+                        <div style="display: flex; align-itens: center; gap: 8px">
+                            <label for="p1d">
+                                <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
+                            </label>
+                            <input type="radio" value="Pretendente surpresa" id="p1d" name="pergunta1" style="display: none">
+                            <label for="p1d">Pretendente surpresa</label>
+                        </div>
+                        <div class="form-actions">
+                            <button>Avançar</button>
+                        </div>
+                    </form>
+                </section>
+                <!--Pergunta 2: texto-->
+                <section class="question-section">
+                    <header>
+                        <h2>Pergunta 2: No dorama Goblin, a prota consegue ver algo no corpo do Goblin que nenhuma outra pessoa consegue. Este objeto está atravessado no corpo dele e é____</h2>
+                    </header>
+                    <form>
+                        <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
+                    </form>
+                </section>
+                <!--Pergunta 3: Senha-->
+                <section class="question-section">
+                    <header>
+                        <h2>Pergunta 3: Escreva o nome de um Dorama que te fez surtar</h2>
+                    </header>
+                    <form>
+                        <input type="text" id="p3" name="pergunta3" placeholder="Digite um nome...">
+                    </form>
+                </section>
+                <!--Pergunta 4: Data-->
+                <section class="question-section">
+                    <header>
+                        <h2>Pergunta 4: Em que ano foi lançado o dorama "Quando o telefone toca"? </h2>
+                    </header>
+                    <form>
+                        <input type="text" id="p4" name="pergunta4" placeholder="Digite uma data">
+                    </form>
+                </section>
+                <!--Pergunta 5: Seleção múltipla-->
+                <section class="question-section">
+                    <header>
+                        <h2>Pergunta 5: Qual desses Doramas são considerados K-Dramas?</h2>
+                    </header>
+                    <form>
+                        <div style="display: flex; align-itens: center; gap: 8px">
+                            <label for="p5a">
+                                <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
+                            </label>
+                            <input type="checkbox" id="p5a" name="pergunta5" value="Jardim de meteoros" style="display: none">
+                            <label for="p5a">Jardim de meteoros</label>
+                        </div>
+    
+                        <div style="display: flex; align-itens: center; gap: 8px">
+                            <label for="p5a">
+                                <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
+                            </label>
+                            <input type="checkbox" id="p5b" name="pergunta5" value="Sorriso Real" style="display: none">
+                            <label for="p5b">Sorriso Real</label>
+                        </div>
+                        <div style="display: flex; align-itens: center; gap: 8px">
+                            <label for="p5c">
+                                <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
+                            </label>
+                            <input type="checkbox" id="p5c" name="pergunta5" value="Amor entre fada e demonio" style="display: none">
+                            <label for="p5c">Amor entre fada e demonio</label>
+                        </div>
+                        <div style="display: flex; align-itens: center; gap: 8px">
+                            <label for="p5d">
+                                <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
+                            </label>
+                            <input type="checkbox" id="p5d" name="pergunta5" value="Rainha das lágrimas" style="display: none">
+                            <label for="p5d">Rainha das lágrimas</label>
+                        </div>
+                        <div style="display: flex; align-itens: center; gap: 8px">
+                            <label for="p5e">
+                                <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
+                            </label>
+                            <input type="checkbox" id="p5e" name="pergunta5" value="O amor que voce me oferece" style="display: none">
+                            <label for="p5e">O amor que voce me oferece</label>
+                        </div>
+                    </form>
+                </section>
+                <!--Pergunta 6:-->
+                <section class="question-section">
+                    <header>
+                        <h2>Pergunta 6: Faça upload de um arquivo contento fotos de um oppa</h2>
+                    </header>
+                    <form>
+                        <input type="file" id="pg" name="pergunta6">
+                    </form>
+                </section>
+                <!--Pergunta 7: Menu suspenso-->
+                <section class="question-section">
+                    <header>
+                        <h2>Pergunta 7: Selecione qual Oppa é o seu top 1</h2>
+                    </header>
+                    <form>
+                        <select name="pergunta7" id="p7">
+                            <option value="Cha Eun Woo">Cha Eun Woo</option>
+                            <option value="Park Bo Gum">Park Bo Gum</option>
+                            <option value="RoWoon">RoWoon</option>
+                            <option value="Le Min Hoo">Le Min Hoo</option>
+                            <option value="Lee Dong Wook">Lee Dong Wook</option>
+                        </select>
+                    </form>
+                </section>
+                <!--Pergunta 8: Imagens-->
+                <section class="question-section">
+                    <header>
+                        <h2>Qual o nome do Dorama representado pela imagem abaixo?</h2>
+                    </header>
+                    <figure>
+                        <img src="dorama.jpg" alt="Imagem cena de um dorama" style="width:100%; max-width:300px;">
+                        <figcaption>Figura 1: Cena de um dorama</figcaption>
+                    </figure>
+                    <form>
+                        <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta">
+                    </form>
+                </section>
+                <!--Tabela de pontuação-->
+                <section class="feedback-section">
+                    <h2>Tabela de pontuação</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th align="center">Pontuação</th>
+                                <th align="left">Avaliação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td align="center">0-2</td>
+                                <td>Acho que você não está assistindo Doramas suficientes!</td>
+                            </tr>
+                            <tr>
+                                <td align="center">3-5</td>
+                                <td>Não desista! Você só precisa assistir a mais Doramas!</td>
+                            </tr>
+                            <tr>
+                                <td align="center">6-8</td>
+                                <td>OMO! AIGOOOOO, você é uma dorameira de respeito! Seus conhecimentos sobre doramas estão excelentes. Parabéns! Que tal tomar um soju para comemorar?</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">Boa sorte na próxima! Assista mais Doramas para melhorar os seus conhecimentos.</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </section>
+                <!--Lista de respostas-->
+                <section class="respostas">
+                    <h2>Verifique suas respostas</h2>
+                    <details>
+                        <summary>Clique aqui para ver as respostas do seu Quiz</summary>
+                        <ol>
+                            <li>Pousando no amor</li>
+                            <li>Uma espada</li>
+                            <li>Tomorrow</li>
+                            <li>2024</li>
+                            <li>Sorriso real e rainha das lágrimas</li>
+                            <li>Arquivo</li>
+                            <li>Lee Dong Wook</li>
+                            <li>Gênio dos desejos</li>
+                        </ol>
+                    </details>
+                </section>
+                <!--Formulário do feedback-->
+                <section class="feedback">
+                    <h2>Nos dê o seu feedback!</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Informações de contato</legend>
+                            <div>
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" placeholder="Digite seu nome">
+                            </div>
+                            <div>
+                                <label for="Email">Email</label>
+                                <input type="email" id="Email" name="Email" placeholder="Digite seu e-mail">
+                            </div>
+                            <label for="comments">Comentários</label>
+                            <div>
+                                <textarea id="Comentários" name="Comentários" rows="4" cols="50" placeholder="Digite seu feedback aqui"></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button onclick="alert('FEEDBACK ENVIADO')">Envie o feedback</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </section>
             </div>
-        </header>
-        <main>
-            <div class="container">
-            <!--Introdução-->
-            <section class="introduction">
-                <h2>Sobre esse Quiz</h2>
-                <p> <strong>Este Quiz</strong> foi desenvolvido para testar seus conhecimentos em <abbr title="Novelas asiáticas">Doramas</abbr>!</p>
-                <p>Voce encontrará diferentes tipos de perguntas, incluindo multipla escolha, texto e perguntas de data. Desafie-se com este Quiz!</p>
-
-            </section>
-            <!--Pergunta 1: Multipla escolha-->
-            <section class="question-section">
-                <header>
-                    <h2>Pergunta 1: Qual o nome do Dorama em que a prota cai de paraquedas em um País estrangeiro?</h2>
-                </header>
-                <form>
-                    <div style="display: flex; align-itens: center; gap: 8px">
-                        <label for="p1a">
-                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
-                        </label>
-                        <input type="radio" value="Intensivão do Amor" id="p1a" name="pergunta1" style="display: none">
-                        <label for="p1a">Intensivão do amor</label>
-                    </div>
-                    <div style="display: flex; align-itens: center; gap: 8px">
-                        <label for="p1b">
-                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
-                        </label>
-                        <input type="radio" value="Amor e batatas" id="p1b" name="pergunta1" style="display: none">
-                        <label for="p1b">Amor e batatas</label>
-                    </div>
-                    <div style="display: flex; align-itens: center; gap: 8px">
-                        <label for="p1c">
-                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
-                        </label>
-                        <input type="radio" value="Pusando no amor" id="p1c" name="pergunta1" style="display: none">
-                        <label for="p1c">Pousando no amor</label>
-                    </div>
-                    <div style="display: flex; align-itens: center; gap: 8px">
-                        <label for="p1d">
-                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
-                        </label>
-                        <input type="radio" value="Pretendente surpresa" id="p1d" name="pergunta1" style="display: none">
-                        <label for="p1d">Pretendente surpresa</label>
-                    </div>
-                    <div class="form-actions">
-                        <button>Avançar</button>
-                    </div>
-                </form>
-            </section>
-            <!--Pergunta 2: texto-->
-            <section class="question-section">
-                <header>
-                    <h2>Pergunta 2: No dorama Goblin, a prota consegue ver algo no corpo do Goblin que nenhuma outra pessoa consegue. Este objeto está atravessado no corpo dele e é____</h2>
-                </header>
-                <form>
-                    <input type="text" id="p2" name="pergunta2" placeholder="Digite sua resposta...">
-                </form>
-            </section>
-            <!--Pergunta 3: Senha-->
-            <section class="question-section">
-                <header>
-                    <h2>Pergunta 3: Escreva o nome de um Dorama que te fez surtar</h2>
-                </header>
-                <form>
-                    <input type="text" id="p3" name="pergunta3" placeholder="Digite um nome...">
-                </form>
-            </section>
-            <!--Pergunta 4: Data-->
-            <section class="question-section">
-                <header>
-                    <h2>Pergunta 4: Em que ano foi lançado o dorama "Quando o telefone toca"? </h2>
-                </header>
-                <form>
-                    <input type="text" id="p4" name="pergunta4" placeholder="Digite uma data">
-                </form>
-            </section>
-            <!--Pergunta 5: Seleção múltipla-->
-            <section class="question-section">
-                <header>
-                    <h2>Pergunta 5: Qual desses Doramas são considerados K-Dramas?</h2>
-                </header>
-                <form>
-                    <div style="display: flex; align-itens: center; gap: 8px">
-                        <label for="p5a">
-                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
-                        </label>
-                        <input type="checkbox" id="p5a" name="pergunta5" value="Jardim de meteoros" style="display: none">
-                        <label for="p5a">Jardim de meteoros</label>
-                    </div>
-
-                    <div style="display: flex; align-itens: center; gap: 8px">
-                        <label for="p5a">
-                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
-                        </label>
-                        <input type="checkbox" id="p5b" name="pergunta5" value="Sorriso Real" style="display: none">
-                        <label for="p5b">Sorriso Real</label>
-                    </div>
-                    <div style="display: flex; align-itens: center; gap: 8px">
-                        <label for="p5c">
-                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
-                        </label>
-                        <input type="checkbox" id="p5c" name="pergunta5" value="Amor entre fada e demonio" style="display: none">
-                        <label for="p5c">Amor entre fada e demonio</label>
-                    </div>
-                    <div style="display: flex; align-itens: center; gap: 8px">
-                        <label for="p5d">
-                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
-                        </label>
-                        <input type="checkbox" id="p5d" name="pergunta5" value="Rainha das lágrimas" style="display: none">
-                        <label for="p5d">Rainha das lágrimas</label>
-                    </div>
-                    <div style="display: flex; align-itens: center; gap: 8px">
-                        <label for="p5e">
-                            <svg style="width: 20px; height: 20px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M178,40c-20.65,0-38.73,8.88-50,23.89C116.73,48.88,98.65,40,78,40a62.07,62.07,0,0,0-62,62c0,70,103.79,126.66,108.21,129a8,8,0,0,0,7.58,0C136.21,228.66,240,172,240,102A62.07,62.07,0,0,0,178,40ZM128,214.8C109.74,204.16,32,155.69,32,102A46.06,46.06,0,0,1,78,56c19.45,0,35.78,10.36,42.6,27a8,8,0,0,0,14.8,0c6.82-16.67,23.15-27,42.6-27a46.06,46.06,0,0,1,46,46C224,155.61,146.24,204.15,128,214.8Z"></path></svg>
-                        </label>
-                        <input type="checkbox" id="p5e" name="pergunta5" value="O amor que voce me oferece" style="display: none">
-                        <label for="p5e">O amor que voce me oferece</label>
-                    </div>
-                </form>
-            </section>
-            <!--Pergunta 6:-->
-            <section class="question-section">
-                <header>
-                    <h2>Pergunta 6: Faça upload de um arquivo contento fotos de um oppa</h2>
-                </header>
-                <form>
-                    <input type="file" id="pg" name="pergunta6">
-                </form>
-            </section>
-            <!--Pergunta 7: Menu suspenso-->
-            <section class="question-section">
-                <header>
-                    <h2>Pergunta 7: Selecione qual Oppa é o seu top 1</h2>
-                </header>
-                <form>
-                    <select name="pergunta7" id="p7">
-                        <option value="Cha Eun Woo">Cha Eun Woo</option>
-                        <option value="Park Bo Gum">Park Bo Gum</option>
-                        <option value="RoWoon">RoWoon</option>
-                        <option value="Le Min Hoo">Le Min Hoo</option>
-                        <option value="Lee Dong Wook">Lee Dong Wook</option>
-                    </select>
-                </form>
-            </section>
-            <!--Pergunta 8: Imagens-->
-            <section class="question-section">
-                <header>
-                    <h2>Qual o nome do Dorama representado pela imagem abaixo?</h2>
-                </header>
-                <figure>
-                    <img src="dorama.jpg" alt="Imagem cena de um dorama" style="width:100%; max-width:300px;">
-                    <figcaption>Figura 1: Cena de um dorama</figcaption>
-                </figure>
-                <form>
-                    <input type="text" id="p8" name="pergunta8" placeholder="Digite sua resposta">
-                </form>
-            </section>
-            <!--Tabela de pontuação-->
-            <section class="feedback-section">
-                <h2>Tabela de pontuação</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th align="center">Pontuação</th>
-                            <th align="left">Avaliação</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td align="center">0-2</td>
-                            <td>Acho que você não está assistindo Doramas suficientes!</td>
-                        </tr>
-                        <tr>
-                            <td align="center">3-5</td>
-                            <td>Não desista! Você só precisa assistir a mais Doramas!</td>
-                        </tr>
-                        <tr>
-                            <td align="center">6-8</td>
-                            <td>OMO! AIGOOOOO, você é uma dorameira de respeito! Seus conhecimentos sobre doramas estão excelentes. Parabéns! Que tal tomar um soju para comemorar?</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="2">Boa sorte na próxima! Assista mais Doramas para melhorar os seus conhecimentos.</td>
-                        </tr>
-                    </tfoot>
-                </table>
-            </section>
-            <!--Lista de respostas-->
-            <section class="respostas">
-                <h2>Verifique suas respostas</h2>
-                <details>
-                    <summary>Clique aqui para ver as respostas do seu Quiz</summary>
-                    <ol>
-                        <li>Pousando no amor</li>
-                        <li>Uma espada</li>
-                        <li>Tomorrow</li>
-                        <li>2024</li>
-                        <li>Sorriso real e rainha das lágrimas</li>
-                        <li>Arquivo</li>
-                        <li>Lee Dong Wook</li>
-                        <li>Gênio dos desejos</li>
-                    </ol>
-                </details>
-            </section>
-            <!--Formulário do feedback-->
-            <section>
-                <h2>Nos dê o seu feedback!</h2>
-                <form>
-                    <fieldset>
-                        <legend>Informações de contato:</legend>
-                        <div>
-                            <label for="name">Nome</label>
-                            <input type="text" id="name" name="name">
-                        </div>
-                        <div>
-                            <label for="Email">Email</label>
-                            <input type="email" id="Email" name="Email">
-                        </div>
-                        <label for="comments">Comentários</label>
-                        <div>
-                            <textarea id="Comentários" name="Comentários" rows="4" cols="50" placeholder="Digite seu feedback aqui"></textarea>
-                        </div>
-                        <button onclick="alert('FEEDBACK ENVIADO')">Envie o feedback</button>
-                    </fieldset>
-                </form>
-            </section>
+            </main>
+            <div>
+            <footer>
+                <div class="container">
+                    <p>&copy Quiz de Doramas. Todos os direitos reservados.</p>
+                    <p>Para conhecer outros Quizzes <a href="https://google.com" target="_blank">clique aqui</a></p>
+                </div>
+            </footer>
         </div>
-        </main>
-        <div>
-        <footer>
-            <div class="container">
-                <p>&copy Quiz de Doramas. Todos os direitos reservados.</p>
-                <p>Para conhecer outros Quizzes <a href="https://google.com" target="_blank">clique aqui</a></p>
-            </div>
-        </footer>
     </body>
 </html>
